@@ -1,7 +1,7 @@
 {
-  "name": "webpack-4-quickstart",
+  "name": "ReactReduxExample",
   "version": "1.0.0",
-  "description": "> Webpack 4 tutorial: All You Need to Know, from 0 Conf to Production Mode",
+  "description": "> ReactReduxExample: All You Need to Know, from 0 Conf to Production Mode",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
