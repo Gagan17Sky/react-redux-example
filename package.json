@@ -1,7 +1,7 @@
 {
-  "name": "ReactReduxExample",
+  "name": "ReactTemplate",
   "version": "1.0.0",
-  "description": "> ReactReduxExample: All You Need to Know, from 0 Conf to Production Mode",
+  "description": "> ReactTemplate",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gagan17Sky/react-redux-example.git"
+    "url": "git+https://github.com/Gagan17Sky/react-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Gagan17Sky/react-redux-example/issues"
+    "url": "https://github.com/Gagan17Sky/react-template/issues"
   },
-  "homepage": "https://github.com/Gagan17Sky/react-redux-example#readme",
+  "homepage": "https://github.com/Gagan17Sky/react-template#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
