@@ -1,21 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const mapStateToProps = state => {
-  return { articles: state.articles };
-};
-
-const ConnectedList = ({ articles }) => (
-  <ul className='list-group list-group-flush'>
-    {articles.map(el => (
-      <li className='list-group-item' key={el.id}>
-        {el.title}
-      </li>
-    ))}
-  </ul>
+const ConnectedList = () => (
+  <div>
+    {
+      props.appData.isFetching && <Text>Loading</Text>
+    }
+    {
+      props.appData.data.length ? (
+        props.appData.data.map((person, i) => {
+          return <div key={i}>
+          <p>Name: {person.name}</p>
+          <p>Age: {person.age}</p>
+          </div>
+        })
+      ) : null
+    }
+  </div>
 );
 
-const List = connect(mapStateToProps)(ConnectedList);
+function mapStateToProps (state){
+  return {
+    appData: state.appData
+  }
+}
 
+const List = connect(mapStateToProps)(ConnectedList);
 
 export default List;
