@@ -1,4 +1,4 @@
-import { FETC_DATA_PENDING, FETCH_DATA_FULFILLED, FETCH_DATA_REJECTED} from '../constants/action-types'
+import { FETCH_DATA_PENDING, FETCH_DATA_FULFILLED, FETCH_DATA_REJECTED} from '../constants/action-types'
 const initialState = {
   data: [],
   dataFetched: false,
@@ -6,9 +6,9 @@ const initialState = {
   error: false
 }
 
-export default function dataReducer ( state = initialState, action) {
+export default function dataReducer ( state = initialState, action) {debugger;
   switch (action.type){
-    case FETC_DATA_PENDING:
+    case FETCH_DATA_PENDING:
       return {
         ...state,
         data: [],
@@ -18,7 +18,7 @@ export default function dataReducer ( state = initialState, action) {
       return {
         ...state,
         isFetching: false,
-        data: action.data
+        data: action.payload
       }
     case FETCH_DATA_REJECTED:
       return {

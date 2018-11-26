@@ -4,10 +4,10 @@ import { connect } from 'react-redux';
 const ConnectedList = (props) => (
   <div>
     {
-      props.appData.isFetching && <Text>Loading</Text>
+      props.appData.isFetching && <p>Loading...</p>
     }
     {
-      props.appData.data.length ? (
+      props.appData.data && props.appData.data.length ? (
         props.appData.data.map((person, i) => {
           return <div key={i}>
           <p>Name: {person.name}</p>

@@ -1,5 +1,5 @@
 # React Redux Example
-> : All You Need to Know, from 0 Conf to Production Mode
+> : This is a base React Redux template to kick start your project
 
 ## Development
 
