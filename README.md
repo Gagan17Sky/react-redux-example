@@ -1,4 +1,4 @@
-# React Redux Example
+# React Template
 > : This is a base React Redux template to kick start your project
 
 ## Development
