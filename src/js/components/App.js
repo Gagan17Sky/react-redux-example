@@ -9,7 +9,7 @@ const App = () => (
       <List />
     </div>
     <div className='col-md-4 offset-md-1'>
-      <h2>Load</h2>
+      <h2>-------------------------</h2>
       <Form />
     </div>
   </div>

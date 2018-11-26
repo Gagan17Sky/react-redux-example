@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const ConnectedList = () => (
+const ConnectedList = (props) => (
   <div>
     {
       props.appData.isFetching && <Text>Loading</Text>

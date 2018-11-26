@@ -6,8 +6,9 @@ const people = [
 
 export default () => {
   return new Promise((resolve, reject) => {
+    debugger;
     setTimeout(() => {
       return resolve(people)
-    }, 3000)
+    }, 2000)
   })
 }

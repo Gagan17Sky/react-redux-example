@@ -4,17 +4,15 @@ import {connect} from 'react-redux';
 import {fetchData} from '../actions/index'
 
 class ConnectedForm extends Component {
-  render(){
-    const {title} = this.state;
-
+  render(props){
     return (
       <form onSubmit={() => props.fetchData()}>
         <div className='form-group'>
-          <label htmlFor="title">Click to load Persons info</label>Load
+          <label htmlFor="title">Click to load Persons info </label>
+          <button type='submit' className='btn btn-success btn-lg'>
+            Fetch
+          </button>
         </div>
-        <button type='submit' className='btn btn-success btn-lg'>
-          Load
-        </button>
       </form>
     );
   }
